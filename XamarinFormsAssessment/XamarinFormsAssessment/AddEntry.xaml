@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsAssessment.AddEntry">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+            <Label Text="Add Entry" 
+                   VerticalOptions="Start"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="First Name"
+                       HorizontalOptions="Start"
+                       FontSize="Medium"
+                       VerticalOptions="Center"/>
+                    <Frame BorderColor="Black" WidthRequest="250" Padding="0">
+                        <Entry x:Name="FirstName" Keyboard="Text"/>
+                    </Frame>
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal">
+                <Label Text="Last Name"
+                       HorizontalOptions="Start"
+                       FontSize="Medium"
+                       VerticalOptions="Center"/>
+                    <Frame BorderColor="Black" WidthRequest="250" Padding="0">
+                        <Entry x:Name="LastName" Keyboard="Text"
+                          />
+                    </Frame>
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal">
+                <Label Text="Date of Birth"
+                       HorizontalOptions="Start"
+                       FontSize="Medium"
+                       VerticalOptions="Center"/>
+                <DatePicker x:Name="BirthDate"
+                            WidthRequest="110"
+                            />
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand">
+                <Button Text="Add"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        x:Name=" AddEntry1"
+                        Clicked="AddEntry_Clicked"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        WidthRequest="200"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

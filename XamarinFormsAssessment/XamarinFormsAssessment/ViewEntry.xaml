@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsAssessment.ViewEntry">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="View Entry" 
+                   VerticalOptions="Start"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+            <StackLayout  Padding="30">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="ID: "
+                           HorizontalOptions="Start"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                    <Label x:Name="myID"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="First Name: "
+                           HorizontalOptions="Start"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                    <Label x:Name="firstN"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Last Name: "
+                           HorizontalOptions="Start"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                    <Label x:Name="lastN"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Date of Birth: "
+                           HorizontalOptions="Start"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                    <Label x:Name="birth"
+                           FontSize="Medium"
+                           VerticalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="CenterAndExpand"
+                 VerticalOptions="CenterAndExpand">
+                <Button Text="Delete Entry"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        x:Name="DeleteEntry"
+                        Clicked="DeleteEntry_Clicked"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        WidthRequest="200"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
